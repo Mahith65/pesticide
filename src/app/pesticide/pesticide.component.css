@@ -1,0 +1,65 @@
+
+.main{
+    width:100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%,rgba(0,0,0,0.5)50%);
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 98vh;
+}
+.logo{
+color:rgb(16, 149, 16);
+font-size: 25px;
+font-family: Arial;
+padding-left: 10px;
+float: left;
+padding-top: 7px;
+margin-top: 0px;
+}
+.head1{
+
+position: relative ;
+font-size: 50px;
+left:600px;
+top:10px;
+}
+.fields{
+position: relative;
+top: 50px;
+left:115%;
+padding:10px;
+}
+input {
+display:block;
+margin-bottom: 10px;
+font-size:16px;
+padding:14px;
+width:500px;
+border-radius: 10px;
+background-color: #f2f2f2;
+border-color: #f2f2f2;
+box-shadow:2px 2px 4px rgba(0,0,0,0.5);
+}
+input ::placeholder{
+font-style: arial;
+}
+button{
+position:relative;
+left:165px;
+display:block;
+margin-bottom: 10px;
+font-size:20px;
+padding:10px;
+width:110px;
+border-radius: 20px;
+border-color: #f2f2f2;
+background-color: #f2f2f2;
+box-shadow:2px 2px 4px rgba(0,0,0,0.5);
+}
+body{
+    background-image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzA5bUPhuYlwB8oa_Xw4R1ul20b-sKuY0Ifg&usqp=CAU";
+}
+
+
+
+

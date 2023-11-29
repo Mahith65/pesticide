@@ -1,0 +1,33 @@
+.container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+body{
+   
+    background-position-x: center;
+    background-position: 0%;
+    
+}
+.text{
+    text-decoration: dashed;
+}
+.letter{
+    text-align: left;
+    text-decoration: double;
+}
+table,th,td{
+   border:2px solid black;
+    
+
+}
+.image{
+     
+    
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-position-x: left;
+    float:left;
+    
+   }

@@ -1,0 +1,64 @@
+<!--<html>
+    <body>
+        <div class="main">
+            
+        <div class="container" >
+            <h1>Search For Crop Pesticide Details</h1>
+            <input tpe="text" class="search-bar"   placeholder="Search..."/>
+             &nbsp;&nbsp;<button (click)="Read()" class="but">Go</button>
+        </div>
+        
+    </div>
+    </body>
+</html>-->
+
+<body>
+<div class="container" id="registration-form">
+    <div class="image">
+        
+    </div>
+    <div class="frm">
+        <h1><b>Search for a crop</b></h1><br>
+        <div class="text">
+        <h2><b>Enter the crop name to see the full details of the crop</b></h2>
+        </div>
+        <form #r="ngForm" >
+            <div class="form-group">
+              <label for="text"><b>crop_name:</b></label>
+              <input type="text" class="form-control" name="crop_name:" placeholder="enter your crop_name" [(ngModel)]="User.crop_name" required/>
+            </div> 
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg float-left" 
+                (click)="Read()">Read</button>
+            </div>
+            <table>
+                <tr><th>crop_name:</th>
+                    <td>{{User.crop_name}}</td>
+                </tr>
+                <br>
+                <tr><th>fertilizer :</th>
+                    <td>{{User.fertilizer}}</td>
+                </tr>
+                <br>
+                <tr><th>dosage_acer :</th>
+                    <td>{{User.dosage_acer}}</td>
+                </tr>
+                <br>
+                <tr><th>dosage_water:</th>
+                    <td>{{User.dosage_water}}</td>
+                </tr>
+                
+              
+                
+            </table>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            
+        </form><br><br><br>
+
+        
+   </div>
+</div>
+ <router-outlet></router-outlet>
+</body>

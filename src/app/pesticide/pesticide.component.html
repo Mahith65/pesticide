@@ -1,0 +1,29 @@
+<html>
+<body>
+    <div class="main">
+
+        <div class="icon">
+            <div class="logo">
+                <div class="head1">
+                <p>Pesticide information</p>
+                </div>
+         
+    
+    <div class="fields">
+        <form #r="ngForm" (ngSubmit)="Insert(r)" >
+        <input type="text" placeholder="crop name" name="crop_name" ngModel required/><br>
+        <input type="text" placeholder="fertilizers used" name="fertilizer" ngModel required/><br>
+        <input type="text" placeholder="dosage/acre" name="dosage_acer" ngModel required/><br>
+        <input type="text" placeholder="dosage/litre water" name="dosage_water" ngModel required/><br>
+        
+        <button>Submit</button>
+    </form>
+    </div>
+
+</div>
+</div>
+</div>
+
+</body>
+
+</html>

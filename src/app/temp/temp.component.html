@@ -1,0 +1,85 @@
+<p>
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" (click)= "opened=!opened"  aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      
+      <button mat-button routerLink="register" id="homebutton" >Home
+        <mat-icon>home</mat-icon>
+  
+        
+      </button>&nbsp;
+      <button mat-button routerLink="contactus">ContactUs
+        <mat-icon>contact_support</mat-icon>
+      </button>
+     
+
+      <button mat-button routerLink="button">Operations
+        <mat-icon>info</mat-icon>
+      </button>&nbsp;
+      
+      <button mat-button routerLink="/">Logout
+        <mat-icon>logout</mat-icon>
+      </button>&nbsp;
+      
+      <span class="example-spacer"></span>
+    </mat-toolbar>
+    <mat-sidenav-container>
+      <mat-sidenav [(opened)]= "opened" mode="push">
+        <br>
+           <div class="example-button-row">
+            &nbsp;&nbsp;
+            <mat-divider></mat-divider>
+            &nbsp;&nbsp;<button mat-button routerLink="pesticide">Pesticide
+              <mat-icon>info</mat-icon>
+            </button><br>
+            <mat-divider></mat-divider>
+            &nbsp;&nbsp;<button mat-button routerLink="contactus">ContactUs
+              <mat-icon>contact_support</mat-icon>
+            </button><br>
+            <mat-divider></mat-divider>
+            &nbsp;&nbsp;<button mat-button routerLink=""> Services
+              <mat-icon>miscellaneous_services</mat-icon>
+            </button><br>
+            <mat-divider></mat-divider>
+            &nbsp;&nbsp;<button mat-button routerLink="">Pesticide policy
+              <mat-icon>notes</mat-icon>
+            </button><br>
+            <mat-divider></mat-divider>
+            &nbsp;&nbsp;<button mat-button routerLink="">Notifications
+              <mat-icon>notification_important</mat-icon>
+            </button><br>
+            <!--&nbsp;&nbsp;<button mat-button>About
+              <mat-icon>info</mat-icon>
+            </button>
+            <mat-divider></mat-divider>
+            &nbsp;&nbsp;<button mat-button routerLink="search">search
+              <mat-icon>search</mat-icon>
+            </button><br>
+            <mat-divider></mat-divider>
+            &nbsp;&nbsp;<button mat-button routerLink="delete">delete
+              <mat-icon>delete</mat-icon>
+            </button>
+            <mat-divider></mat-divider>
+            &nbsp;&nbsp;<button mat-button routerLink="update">update
+              <mat-icon>info</mat-icon>
+            </button>
+            <mat-divider></mat-divider>
+            &nbsp;&nbsp;<button mat-stroked-button  routerLink="home1">overview
+               
+            </button>&nbsp;-->
+          </div>
+      </mat-sidenav>
+      
+      
+      <mat-sidenav-content>
+        
+        <router-outlet></router-outlet>
+       
+      </mat-sidenav-content>
+      
+    </mat-sidenav-container>
+   </p>
+  
+  
+  

@@ -1,0 +1,17 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  mat-sidenav-container{
+height:calc(205vh - 115vh);
+color: black;
+}
+mat-sidenav{
+    width:200px;
+    background-color: rgb(75, 71, 152);
+}
+.mat-toolbar.mat-primary {
+  background:#404040;
+  color: #f8f7f3;
+}
+
+

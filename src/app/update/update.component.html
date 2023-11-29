@@ -1,0 +1,33 @@
+<div class="container" id="registration-form">
+    <div class="image"></div>
+    <div class="frm">
+        <h1>update details</h1>
+        <form #r="ngForm" >
+            <div class="form-group">
+                <label for="text">crop_name</label>
+                <input type="cell" class="form-control" name="crop_name" placeholder="enter crop name" [(ngModel)]="User.crop_name" required/>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg float-left" (click)="Read()">View</button>
+            </div>
+            <div class="form-group">
+                <label for="username">fertilizer</label>
+                <input type="text" class="form-control" name="fertilizer" placeholder="enter fertilizer" [(ngModel)]="User.fertilizer" required/>
+            </div>
+            <div class="form-group">
+                <label for="email">dosage_acer</label>
+                <input type="email" class="form-control" name="dosage_acer" placeholder="dosage_acer" [(ngModel)]="User.dosage_acer" required>
+            </div>
+            <div class="form-group">
+              <label for="gender">dosage_water</label>
+              <input type="text" class="form-control" name="dosage_water" placeholder="dosage_water" [(ngModel)]="User.dosage_water" required>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg float-left" (click)="Update()">update</button>
+            </div>
+        </form><br><br><br>
+    </div>
+   <router-outlet></router-outlet>
+
+  </div>

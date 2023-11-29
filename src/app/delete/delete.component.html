@@ -1,0 +1,17 @@
+<div class="container" id="registration-form">
+    <div class="image"></div>
+    <div class="frm">
+        <h1>Delete</h1>
+        <form #r="ngForm" (ngSubmit)="Delete()">
+            <div class="form-group">
+              <label for="email">email</label>
+              <input type="text" class="form-control" name="email" placeholder="enter your email" [(ngModel)]="User.email" required/>
+            </div> 
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg float-left">Delete</button>
+            </div>
+        </form><br><br><br>
+    </div>
+</div>
+<router-outlet></router-outlet>
+

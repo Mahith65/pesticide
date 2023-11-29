@@ -1,0 +1,16 @@
+<div class="login-container">
+	<div class="login-form">
+	  <h1>Login here</h1>
+	  <form>
+		<input type="text"  name="email" placeholder="enter you mail" required [(ngModel)]="User.email"/>
+		<input type="password" name="pass" placeholder="Password" required [(ngModel)]="User.pass"/>
+		<button type="submit" (click)="Read()">Login</button>
+		<p class="text-center text-muted mt-5 mb-0">Have not registered yet? <a routerLink="/signup"
+			class="fw-bold text-body"><u>Register here</u></a></p>
+	  </form>
+	</div>
+	
+  </div>
+  
+
+  
